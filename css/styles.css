@@ -1,17 +1,83 @@
-/* Error: expected ";".
- *   ,
- * 8 | //selector universal//
- *   |                       ^
- *   '
- *   SCSS\styles.scss 8:23  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: 'Error: expected ";".\a   \2577 \a 8 \2502  //selector universal//\d\a   \2502                        ^\a   \2575 \a   SCSS\\styles.scss 8:23  root stylesheet';
+* {
+  margin: 0;
+  padding: 0;
 }
+
+.nav-camino {
+  background-color: none;
+  font-size: 1.5rem;
+}
+.nav-camino .logo {
+  display: flex;
+  width: 60px;
+  height: 60px;
+}
+
+.flexcontainer-main {
+  display: flex;
+  flex-flow: column wrap;
+}
+.flexcontainer-main .conteiner-imagen {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+.flexcontainer-main .conteiner-imagen .fitzroy {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+.flexcontainer-main .conteiner-imagen .title-h1 {
+  position: absolute;
+  left: 20%;
+  right: 20%;
+  bottom: 30%;
+  font-family: "oxygen", sans-serif;
+  font-size: 4vw;
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  text-align: center;
+  text-transform: uppercase;
+  text-rendering: optimizeLegibility;
+  color: rgb(123, 185, 243);
+  letter-spacing: 0.1em;
+  text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+}
+.flexcontainer-main .first-p {
+  position: relative;
+  display: inline-block;
+  font-family: "oxygen", sans-serif;
+  font-size: 2vw;
+  font-style: italic;
+  font-weight: bolder;
+  text-align: center;
+  color: rgb(1, 10, 29);
+  border: 2px solid #141414;
+  background-color: aliceblue;
+}
+.flexcontainer-main .conteiner-actividades {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.flexcontainer-main .video-responsive {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+.flexcontainer-main .video-responsive iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*# sourceMappingURL=styles.css.map */

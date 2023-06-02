@@ -1,0 +1,9 @@
+.nav-camino {
+	background-color: $background-color_1;
+	font-size: 1.5rem;
+
+	.logo {
+		display: flex;
+		@include sizes (60px,60px);
+	}
+}

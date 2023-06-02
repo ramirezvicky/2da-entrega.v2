@@ -1,0 +1,12 @@
+//colors//
+$color_1: rgb(123, 185, 243);
+$color_2: rgb(1, 10, 29);
+$background-color_1: none;
+$background-color_2: aliceblue;
+//fonts//
+$font-family_1: 'oxygen', sans-serif;
+//sizes//
+@mixin sizes ($width, $heigth) {
+    width: $width;
+    height: $heigth;
+}

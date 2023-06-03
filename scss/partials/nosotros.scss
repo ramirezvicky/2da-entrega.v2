@@ -1,0 +1,63 @@
+
+.conteiner-imagen {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	
+	.fitzroy {
+		position: relative;
+		@include sizes (100%,auto);
+		max-width: 100%;
+		}
+	.title-h1 {
+		position: absolute;
+		left: 20%;
+		right: 20%;
+		bottom: 30%;
+		font-family: $font-family_1;
+		font-size: 4vw;
+		font-style: italic;
+		font-weight: bold;
+		text-align: center;
+		text-align: center;
+		text-transform: uppercase;
+		text-rendering: optimizeLegibility;
+		color: $color_1;
+		letter-spacing: .1em;
+		text-shadow: 0 -1px 0 #fff, 0 1px 0 #2e2e2e, 0 2px 0 #2c2c2c, 0 3px 0 #2a2a2a, 0 4px 0 #282828, 0 5px 0 #262626, 0 6px 0 #242424, 0 7px 0 #222, 0 8px 0 #202020, 0 9px 0 #1e1e1e, 0 10px 0 #1c1c1c, 0 11px 0 #1a1a1a, 0 12px 0 #181818, 0 13px 0 #161616, 0 14px 0 #141414, 0 15px 0 #121212, 0 22px 30px rgba(0, 0, 0, 0.9);
+	}
+}
+    
+.grid-container-nosotros {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+
+    .grid-item-text {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        text-align: justify;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    .grid-item-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        @include sizes (100%,auto);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-container-nosotros {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'texto1'
+            'imagen1'
+            'texto2'
+            'imagen2';
+    }
+}

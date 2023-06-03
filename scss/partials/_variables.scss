@@ -4,7 +4,8 @@ $color_2: rgb(1, 10, 29);
 $background-color_1: none;
 $background-color_2: aliceblue;
 //fonts//
-$font-family_1: 'oxygen', sans-serif;
+$font-family_1: 'Kalam', cursive;
+$font-family_2: 'Oxygen', sans-serif;
 //sizes//
 @mixin sizes ($width, $heigth) {
     width: $width;

@@ -1,3 +1,4 @@
+
 .title-contacto {
     position: relative;
     display: block;
@@ -9,4 +10,32 @@
     color: $color_2;
     border: 2px solid #141414;
 
+}
+
+.grid-container-contact {
+    display: grid;
+    grid-template-rows: repeat(3, auto);
+    grid-template-columns: auto auto;
+
+    .grid-item { 
+        display: block;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .grid-item-p{
+        grid-column: 1 / span 3;
+    }
+    .grid-item-f {
+        grid-column: 1 / span 1;
+    }
+    .grid-item-i {
+        grid-column: 2 / span 1;
+    }
+    .grid-item-m {
+        grid-column: 1 / span 1;
+    }
+    .grid-item-d {
+        grid-column: 2 / span 1;
+    }
 }

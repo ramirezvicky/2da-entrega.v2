@@ -47,9 +47,11 @@
       </header>
         <main>
             <h1 class="title-contacto">CONTACTO</h1>
-            <section class="contacto">
+            <section class="grid-container-contact">
+              <div class="grid-item-p">
                 <p>¡Estamos encantados de escucharte! En "Camino a la Cima" valoramos tu interés y estamos aquí para responder a todas tus preguntas y comentarios. Si deseas obtener más información sobre nuestras expediciones, reservar un viaje o simplemente compartir tu pasión por la montaña, no dudes en ponerte en contacto con nosotros. Nuestro amable equipo de atención al cliente está listo para ayudarte en tu camino hacia la cima. Completa el formulario de contacto a continuación o utiliza la información de contacto proporcionada y te responderemos en breve. ¡Esperamos tener noticias tuyas y ser parte de tu próxima aventura en la montaña!</p>
-                <!--formulario de contacto-->
+              </div>
+              <div class="grid-item-f">
                 <form action="form.php" method="post">
                     <label for="">Nombre y Apellido</label>
                     <input type="text" name="Nombre" id="Nombre" placeholder="Juan Perez">
@@ -61,22 +63,23 @@
                     <textarea name="consulta" id="consulta" cols="30" rows="10"></textarea>
                     <input type="submit" value="Enviar">
                 </form>
+              </div>
+              <div class="grid-item-i">
                 <img src="../img/expediciones.png" alt="imagen">
-            </section>
-            <section class="info"><!-- sección de informacion sobre la empresa-->
-                <div class="mapa">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2419.2629290937434!2d-58.4068656212448!3d-34.59877610560106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1682174103728!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="datos">
-                    <h2>DATOS</h2>
-                    <ul>
-                        <li>Dirección</li>
-                        <li>Mail</li>
-                        <li>Teléfono</li>
-                        <li>Whatsapp</li>
-                        <li>Redes</li>
-                    </ul>
-                </div>
+              </div>
+              <div class="grid-item-m">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2419.2629290937434!2d-58.4068656212448!3d-34.59877610560106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1682174103728!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+              <div class="grid-item-d">
+                <h2>DATOS</h2>
+                <ul>
+                  <li>Dirección</li>
+                  <li>Mail</li>
+                  <li>Teléfono</li>
+                  <li>Whatsapp</li>
+                  <li>Redes</li>
+                </ul>
+              </div>
             </section>
         </main>
         <footer class="container-footer">

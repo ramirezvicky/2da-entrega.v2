@@ -1,0 +1,27 @@
+@media screen and (max-width: 960px) {
+    body {
+        background-size: 960px;
+        background-repeat: no-repeat;
+    }
+    .grid-container-nosotros {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'texto1'
+            'imagen1'
+            'texto2'
+            'imagen2';
+    }
+    .gridconteiner-actividades {
+		grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .grid-container-act {
+        grid-column: 1;
+
+        .grid-item {
+            grid-template-areas: unset;
+        }
+    }
+}

@@ -18,9 +18,11 @@
 
     .actividades {
         display: grid;
-        grid-template-rows: repeat(3, auto);
+        grid-template-columns: repeat(2, 1fr); /* Por defecto: 2 columnas */
+        grid-gap: 10px;
+        /*grid-template-rows: repeat(3, auto);
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;
+        gap: 10px;*/
     
         .grid-item {
         border: 1px solid black;
@@ -39,16 +41,7 @@
         transition: background-color 0.3s ease;
         
         :hover {
-            background-color: #45a049;
-        }
-    }
-}
-
-@media (max-width: 600px) {
-    .actividades {
-      grid-template-columns: 1fr;
-        .grid-item {
-            grid-template-areas: unset;
+            background-color: #b993c4;
         }
     }
 }

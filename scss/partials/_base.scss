@@ -4,8 +4,9 @@
 	padding: 0;
 }
 body {
-	background-image: linear-gradient(135deg, #c0c0c0, #696969, #f5f5f5, #e6e6fa, #ffe4e1, #fff5ee, #778899, #b0c4de);
+	background-image: linear-gradient(135deg, #c0c0c0, #d0b397, #f5f5f5, #e6e6fa, #ba9882, #fff5ee, #896a5a, #62604e);
 	background-size: 2400px;
+	background-repeat: no-repeat;
 	animation: fanimado 20s infinite;
 }
 @keyframes fanimado {

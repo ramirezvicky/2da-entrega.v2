@@ -4,8 +4,9 @@
 }
 
 body {
-  background-image: linear-gradient(135deg, #c0c0c0, #696969, #f5f5f5, #e6e6fa, #ffe4e1, #fff5ee, #778899, #b0c4de);
+  background-image: linear-gradient(135deg, #c0c0c0, #d0b397, #f5f5f5, #e6e6fa, #ba9882, #fff5ee, #896a5a, #62604e);
   background-size: 2400px;
+  background-repeat: no-repeat;
   animation: fanimado 20s infinite;
 }
 
@@ -94,15 +95,32 @@ body {
   border: 2px solid #141414;
   background-color: #2e2e2e;
 }
-.flexcontainer-main .conteiner-actividades {
-  display: flex;
-  flex-wrap: wrap;
+.flexcontainer-main .gridconteiner-actividades {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.flexcontainer-main .gridconteiner-actividades .grid-item-act {
   position: relative;
-  flex-direction: row;
-  justify-content: space-around;
+  display: inline-block;
+}
+.flexcontainer-main .gridconteiner-actividades .grid-item-act img {
+  display: block;
+  max-width: 100%;
+  height: 100%;
+}
+.flexcontainer-main .gridconteiner-actividades .grid-item-act h2 {
+  position: absolute;
+  top: 20%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
 }
 .flexcontainer-main .video-responsive {
   position: relative;
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 56.25%;
@@ -136,9 +154,11 @@ body {
 }
 .grid-container-act .actividades {
   display: grid;
-  grid-template-rows: repeat(3, auto);
+  grid-template-columns: repeat(2, 1fr); /* Por defecto: 2 columnas */
+  grid-gap: 10px;
+  /*grid-template-rows: repeat(3, auto);
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 10px;*/
 }
 .grid-container-act .actividades .grid-item {
   border: 1px solid black;
@@ -155,17 +175,9 @@ body {
   transition: background-color 0.3s ease;
 }
 .grid-container-act .mas-info :hover {
-  background-color: #45a049;
+  background-color: #b993c4;
 }
 
-@media (max-width: 600px) {
-  .actividades {
-    grid-template-columns: 1fr;
-  }
-  .actividades .grid-item {
-    grid-template-areas: unset;
-  }
-}
 .title-contacto {
   position: relative;
   display: block;
@@ -287,10 +299,25 @@ body {
   height: auto;
 }
 
-@media (max-width: 600px) {
+@media screen and (max-width: 960px) {
+  body {
+    background-size: 960px;
+    background-repeat: no-repeat;
+  }
   .grid-container-nosotros {
     grid-template-columns: 1fr;
     grid-template-areas: "texto1" "imagen1" "texto2" "imagen2";
+  }
+  .gridconteiner-actividades {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (min-width: 960px) {
+  .grid-container-act {
+    grid-column: 1;
+  }
+  .grid-container-act .grid-item {
+    grid-template-areas: unset;
   }
 }
 

@@ -50,14 +50,3 @@
         @include sizes (100%,auto);
     }
 }
-
-@media (max-width: 600px) {
-    .grid-container-nosotros {
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            'texto1'
-            'imagen1'
-            'texto2'
-            'imagen2';
-    }
-}

@@ -33,6 +33,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     padding: 20px;
+	grid-gap: 10px;
 
     .grid-item-text {
         display: flex;
@@ -41,12 +42,13 @@
         flex-direction: column;
         text-align: justify;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
+		font-size: 1vw;
     }
     .grid-item-img {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        @include sizes (100%,auto);
+        @include sizes ( auto,auto);
     }
 }

@@ -7,27 +7,90 @@
     .title-act {
         position: relative;
         display: block;
-        font-family: $font-family_2;
-        font-size: 3vw;
-        font-style: oblique;
-        font-weight: lighter;
         text-align: center;
-        color: $color_2;
+        font-family: $font-family_2;
+        font-size: 4vw;
+        font-weight: bold; 
+        background: #202020; 
+        -webkit-background-clip: text; 
+        -moz-background-clip: text; 
+        background-clip: text; 
+        color: transparent; 
+        text-shadow: 0px 3px 3px rgba(255,255,255,0.4),0px -1px 1px rgba(0,0,0,0.3);
         border: 2px solid #141414;
     }
 
     .actividades {
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Por defecto: 2 columnas */
-        grid-gap: 10px;
-        /*grid-template-rows: repeat(3, auto);
         grid-template-columns: repeat(2, 1fr);
-        gap: 10px;*/
-    
-        .grid-item {
-        border: 1px solid black;
+        grid-gap: 10px;
+        margin: 15px;
         padding: 10px;
+    
+        .grid-item-1 {
+            border: 1px solid black;
+            padding: 10px;
+            @include sizes ( auto, auto);
+            img {
+                object-fit: cover;
+                border-radius: 10px;
+            }
         }
+        .grid-item-2 {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: justify;
+            font-family: $font-family_2;
+            font-size: 1vw;
+            h2 {
+                text-align: justify;
+                font-family: $font-family_2;
+                font-size: 2vw;
+            }
+        }
+        .grid-item-3 {
+            border: 1px solid black;
+            padding: 10px;
+            @include sizes ( auto,auto);
+            img {
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+        .grid-item-4 {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: justify;
+            font-family: $font-family_2;
+            font-size: 1vw;
+            h2 {
+                text-align: justify;
+                font-family: $font-family_2;
+                font-size: 2vw;
+            }
+        }
+        .grid-item-5 {
+            border: 1px solid black;
+            padding: 10px;
+            @include sizes ( auto,auto);
+            img {
+                object-fit: cover;
+                border-radius: 10px;
+            }
+        }
+        .grid-item-6 {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: justify;
+            font-family: $font-family_2;
+            font-size: 1vw;
+            h2 {
+                text-align: justify;
+                font-family: $font-family_2;
+                font-size: 2vw;
+            }
+        }
+
     }
 
     .mas-info {
@@ -40,7 +103,7 @@
         border-radius: 4px;
         transition: background-color 0.3s ease;
         
-        :hover {
+        &:hover {
             background-color: #b993c4;
         }
     }

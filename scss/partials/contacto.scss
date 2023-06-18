@@ -84,12 +84,22 @@
         justify-content: center;
         margin-top: 25px;
 
-        ul {
-            margin-top: 25px;
-            display: inline;
-            text-align: left;
+        h2 {
+            display: inline-block;
+            margin-left: 10px;
+            text-align: justify;
             font-family: $font-family_2;
             font-size: 2vw;
+            font-style: oblique;
+            font-weight: 800;
+        }
+
+        ul {
+            margin-top: 25px;
+            display: block;
+            text-align: left;
+            font-family: $font-family_2;
+            font-size: 1.5vw;
             font-style: oblique;
         }
     }

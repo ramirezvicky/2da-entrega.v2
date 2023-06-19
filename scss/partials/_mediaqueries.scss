@@ -17,6 +17,7 @@
     .gridconteiner-actividades {
 		grid-template-columns: 1fr;
         grid-template-rows: auto;
+        align-items: center;
         .grid-item-act {
             grid-column: 1;
         }

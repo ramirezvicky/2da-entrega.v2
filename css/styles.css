@@ -442,6 +442,7 @@ body {
   .gridconteiner-actividades {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
+    align-items: center;
   }
   .gridconteiner-actividades .grid-item-act {
     grid-column: 1;

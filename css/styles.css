@@ -39,6 +39,7 @@ body {
   align-items: center;
   font-size: 1.5vw;
   font-family: "Kalam", cursive;
+  padding: 10px;
 }
 .container-footer ul {
   list-style-type: none;
@@ -263,6 +264,7 @@ body {
   display: grid;
   grid-template-rows: repeat(2, auto);
   grid-template-columns: 1fr 1fr;
+  margin: 10px;
 }
 .grid-container-contact .grid-item {
   max-width: 100%;
@@ -278,6 +280,8 @@ body {
 .grid-container-contact .grid-item-f {
   grid-area: "grid-item-f";
   grid-column: 1/span 1;
+  margin: 10px;
+  padding: 10px;
 }
 .grid-container-contact .grid-item-f .inputbox {
   display: flex;
@@ -308,6 +312,8 @@ body {
   grid-area: "grid-item-m";
   grid-column: 1/span 1;
   display: flex;
+  margin: 10px;
+  padding: 10px;
 }
 .grid-container-contact .grid-item-m iframe {
   position: relative;
